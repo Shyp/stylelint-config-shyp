@@ -32,7 +32,7 @@ module.exports = {
     "declaration-colon-newline-after": "always-multi-line",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
-    "font-family-name-quotes": "single-where-recommended",
+    "font-family-name-quotes": "always-where-recommended",
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
     "function-comma-space-after": "always-single-line",
@@ -57,7 +57,7 @@ module.exports = {
     "no-missing-eof-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
-    "number-zero-length-no-unit": true,
+    "length-zero-no-unit": true,
     "rule-non-nested-empty-line-before": [ "always-multi-line", {
       ignore: ["after-comment"],
     } ],
