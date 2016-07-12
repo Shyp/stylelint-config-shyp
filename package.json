@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-shyp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An stylelint configuration for Shyp projects",
   "main": "index.js",
   "author": "Shyp <engineering@shyp.com>",
