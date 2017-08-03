@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Shyp <engineering@shyp.com>",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "stylelint-order": "^0.6.0"
   }
 }
