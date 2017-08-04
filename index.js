@@ -66,7 +66,6 @@ module.exports = {
     } ],
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
-    "selector-list-comma-newline-after": "always",
     "selector-list-comma-space-before": "never",
     "selector-pseudo-element-colon-notation": "single",
     "string-no-newline": true,
