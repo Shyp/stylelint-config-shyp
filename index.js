@@ -60,9 +60,10 @@ module.exports = {
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
-    // "rule-empty-line-before": [ "always-multi-line", {
-    //   except: [ "inside-block-and-after-rule" ],
-    // } ],
+    "rule-empty-line-before": [ "always-multi-line", {
+      except: [ "first-nested", "inside-block-and-after-rule" ],
+      ignore: [ "after-comment", "inside-block" ]
+    } ],
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
     "selector-list-comma-newline-after": "always",
