@@ -1,8 +1,11 @@
 module.exports = {
+  "plugins": [
+		"stylelint-order"
+	],
   "rules": {
     "at-rule-empty-line-before": [ "always", {
-      except: [ "blockless-group", "first-nested" ],
-      ignore: ["after-comment"],
+      except: [ "first-nested", "blockless-after-blockless" ],
+      ignore: [ "after-comment" ],
     } ],
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always-multi-line",
@@ -23,7 +26,7 @@ module.exports = {
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
-    "declaration-block-properties-order": "alphabetical",
+    "order/properties-alphabetical-order": true,
     "declaration-block-semicolon-newline-after": "always-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-block-semicolon-space-before": "never",
@@ -45,7 +48,6 @@ module.exports = {
     "max-empty-lines": 2,
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
-    "media-feature-no-missing-punctuation": true,
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "always",
     "media-query-list-comma-newline-after": "always-multi-line",
@@ -58,12 +60,12 @@ module.exports = {
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
-    "rule-non-nested-empty-line-before": [ "always-multi-line", {
-      ignore: ["after-comment"],
+    "rule-empty-line-before": [ "always-multi-line", {
+      except: [ "first-nested", "inside-block-and-after-rule" ],
+      ignore: [ "after-comment", "inside-block" ]
     } ],
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
-    "selector-list-comma-newline-after": "always",
     "selector-list-comma-space-before": "never",
     "selector-pseudo-element-colon-notation": "single",
     "string-no-newline": true,
